@@ -1,0 +1,12 @@
+using System.Text;
+
+char c1 = 'A';
+string st1 = "A";
+object o1 = c1;  //BOXING//
+object o2 = st1;   //un puntero copia otro puntero = no boxing/unboxing??//
+char c2 = (char)o1;     //UMBUXING//
+Console.WriteLine(o2);  
+
+string st2 = (string)o2;//UMboxing ? o conversion explicita??
+Console.WriteLine(o2.GetType());
+st2 = "z"; //si estring se considera objeto,cololarle un literal cuento como boxing? //
